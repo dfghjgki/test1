@@ -10,7 +10,19 @@
 </head>
 
 <body>
-    <div class="kub"></div>
+    <div class="kub" onclick="massiv()"></div>
+    <script>
+        function massiv() {
+            a = [];
+            a.push(1, 2, 3, 4, 5, "slovo");
+            delete a[3];
+            var aler = a.length;
+            var last = a[5]
+            var fourth = a[3]
+
+            alert(aler)
+        }
+    </script>
 </body>
 
 </html>
