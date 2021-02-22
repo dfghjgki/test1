@@ -1,7 +1,15 @@
 .kub {
     width: 500px;
-    height: 500px;
+    height: 300px;
     background: yellow;
     border: 1px solid red;
     margin: 40px auto;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 10px auto;
+    cursor: pointer;
 }

@@ -10,19 +10,22 @@
 </head>
 
 <body>
-    <div class="kub" onclick="massiv()"></div>
+    <div class="kub"></div>
+    <input type="text" onchange="massiv()" id="inp" style="margin-top: 5px; margin-left: 683px;">
+    <div class="btn" onclick="alert(mass)"></div>
     <script>
-        function massiv() {
-            a = [];
-            a.push(1, 2, 3, 4, 5, "slovo");
-            delete a[3];
-            var aler = a.length;
-            var last = a[5]
-            var fourth = a[3]
+        let mass = [];
+        mass[0] = 0;
 
-            alert(aler)
+        function massiv() {
+            console.log(parseInt(mass.length))
+            var dl = mass.length
+            mass.push($('#inp').val());
+            console.log(mass[dl]);
+            $('#inp').val('')
         }
     </script>
+    <script src="js/jquery.js"></script>
 </body>
 
 </html>
